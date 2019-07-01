@@ -32,6 +32,10 @@
         </dependency>
     </dependencies>
 
+    <scm>
+        
+    </scm>
+
     <build>
         <plugins>
             <plugin>
@@ -39,7 +43,23 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshot</id>
+            <url>http://localhost:8081/repository/nexus-snapshot</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-release</id>
+            <url>http://localhost:8081/repository/nexus-release</url>
+        </repository>
+    </distributionManagement>
 
 </project>
