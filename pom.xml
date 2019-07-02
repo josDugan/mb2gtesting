@@ -15,6 +15,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <junit.version>5.3.1</junit.version>
+        <project.scm.id>github</project.scm.id>
     </properties>
 
     <dependencies>
@@ -33,7 +34,8 @@
     </dependencies>
 
     <scm>
-        
+       <developerConnection>scm:git:https://github.com/josDugan/mb2gtesting.git</developerConnection>
+        <url>https://github.com/josDugan/mb2gtesting</url>
     </scm>
 
     <build>
